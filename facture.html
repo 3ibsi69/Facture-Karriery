@@ -60,6 +60,7 @@
         margin-top: 10px;
         margin-inline: 20px;
         padding: 30px;
+        position: relative; /* Add this line */
       }
       .content p {
         font-size: 16px;
@@ -119,6 +120,19 @@
       .table-data td:first-child {
         width: 60%;
       }
+
+      #date {
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 50px;
+      }
+      #signature {
+        position: absolute;
+        right: 30px;
+        width: 300px;
+        
+      }
     </style>
   </head>
 
@@ -172,6 +186,9 @@
             <td>3000</td>
           </tr>
         </table>
+        <p id="date">Date :</br> 02/06/2023</p>
+
+        <img id="signature" src="sign.png" alt="" />
       </div>
     </div>
   </body>
