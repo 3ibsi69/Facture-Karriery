@@ -60,37 +60,38 @@
       }
       .content p {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         margin: 0;
         padding: 10px 0;
+        max-width: 90%;
       }
-      table {
+      .facture-table {
         width: 100%;
         border-collapse: collapse;
         border: 1px solid #ccc;
       }
 
-      th,
-      td {
+      .facture-header th,
+      .facture-data td {
         border: 1px solid #ccc;
         padding: 8px;
         text-align: center;
       }
 
-      th {
+      .facture-header th {
         background-color: #e81a41;
       }
-      td {
+      .facture-data td {
         font-weight: 500;
         font-style: italic;
       }
-      th:nth-child(2),
-      td:nth-child(2) {
+      .facture-header th:nth-child(2),
+      .facture-data td:nth-child(2) {
         width: 40%;
         text-align: left;
       }
-      td:nth-child(3),
-      td:nth-child(4) {
+      .facture-data td:nth-child(3),
+      .facture-data td:nth-child(4) {
         text-align: right;
       }
     </style>
@@ -117,14 +118,14 @@
           Intitulé: Devis pour la création de deux plateformes de centre de
           formation de langue edumonde (2 mois)
         </p>
-        <table>
-          <tr>
+        <table class="facture-table">
+          <tr class="facture-header">
             <th>Quatité</th>
             <th>Désignation</th>
             <th>Prix unitaire HT</th>
             <th>Prix Total HT</th>
           </tr>
-          <tr>
+          <tr class="facture-data">
             <td>2</td>
             <td>Full stack web</td>
             <td>3000</td>
