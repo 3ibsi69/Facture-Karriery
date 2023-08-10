@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facture</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        background: grey;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        width: 794px;
+        height: 100vh;
+        background: white;
+        margin-inline: 20px; /* Add margin-inline */
+      }
+      .header {
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin-inline: 20px; /* Add margin-inline */
+      }
+      .header-left {
+        padding: 30px;
+        line-height: 5px;
+      }
+      .header-left #title {
+        font-size: 25px;
+        font-weight: 750;
+        margin-bottom: 40px;
+      }
+      .header-left p {
+        font-size: 17px;
+        font-weight: 530;
+        margin-bottom: 10px;
+        letter-spacing: 0.3px;
+      }
+
+      .header-right {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .header-right img:first-child {
+        margin-bottom: 20px;
+      }
+      .content {
+        margin-inline: 20px;
+        padding: 30px;
+      }
+      .content p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        padding: 10px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ccc;
+      }
+
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: #e81a41;
+      }
+      td {
+        font-weight: 500;
+        font-style: italic;
+      }
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 40%;
+        text-align: left;
+      }
+      td:nth-child(3),
+      td:nth-child(4) {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-left">
+          <h1 id="title">STE KARRIERY</h1>
+          <p>000,Coworking Space digi 2010</p>
+          <p>Mannouba, Tunis</p>
+          <p>Phone: +216 71 000 000</p>
+          <p>Matricule Fiscale: 1766538-T</p>
+          <p>Facture N°: ABZ-</p>
+        </div>
+        <div class="header-right">
+          <img src="devis.png" alt="devis" />
+          <img src="K.png" alt="KARRIERY" width="150px" height="150px" />
+        </div>
+      </div>
+      <div class="content">
+        <p>
+          Intitulé: Devis pour la création de deux plateformes de centre de
+          formation de langue edumonde (2 mois)
+        </p>
+        <table>
+          <tr>
+            <th>Quatité</th>
+            <th>Désignation</th>
+            <th>Prix unitaire HT</th>
+            <th>Prix Total HT</th>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Full stack web</td>
+            <td>3000</td>
+            <td>3000</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
